@@ -27,33 +27,34 @@
 
 <p>The first time you run the app, it will create some default users and data. Here is the output:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>meteor npm run start
-
-&gt; meteor-application-template-react@ start /Users/philipjohnson/github/philipmjohnson/digits/app
-&gt; meteor --no-release-check --settings ../config/settings.development.json
-
-[[[[[ ~/github/philipmjohnson/digits/app ]]]]]
-
-=&gt; Started proxy.                             
-=&gt; Started MongoDB.                           
-I20180305-18:06:02.764(-10)? Creating the default user(s)
-I20180305-18:06:02.803(-10)?   Creating user admin@foo.com.
-I20180305-18:06:02.803(-10)?   Creating user john@foo.com.
-I20180305-18:06:02.804(-10)? Creating default contacts.
-I20180305-18:06:02.804(-10)?   Adding: Johnson (john@foo.com)
-I20180305-18:06:02.804(-10)?   Adding: Casanova (john@foo.com)
-I20180305-18:06:02.804(-10)?   Adding: Binsted (admin@foo.com)
-=&gt; Started your app.
-
-=&gt; App running at: http://localhost:3000/
-W20180305-18:06:02.805(-10)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
-W20180305-18:06:02.805(-10)? (STDERR) While this implementation will work correctly, it is known to be
-W20180305-18:06:02.806(-10)? (STDERR) approximately three times slower than the native implementation.
-W20180305-18:06:02.806(-10)? (STDERR) In order to use the native implementation instead, run
-W20180305-18:06:02.806(-10)? (STDERR) 
-W20180305-18:06:02.806(-10)? (STDERR)   meteor npm install --save bcrypt
-W20180305-18:06:02.806(-10)? (STDERR) 
-W20180305-18:06:02.806(-10)? (STDERR) in the root directory of your application.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\livef\Desktop\Git\ICS 314-2\digits\app>meteor npm run start
+                                                                                   
+                                                                                   > meteor-application-template-react@ start C:\Users\livef\Desktop\Git\ICS 314-2\digits\app
+                                                                                   > meteor --no-release-check --settings ../config/settings.development.json
+                                                                                   
+                                                                                   [[[[[ C:\Users\livef\Desktop\Git\ICS 314-2\digits\app ]]]]]
+                                                                                   
+                                                                                   => Started proxy.
+                                                                                   => Started MongoDB.
+                                                                                   W20191108-23:24:48.859(-10)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
+                                                                                   W20191108-23:24:48.946(-10)? (STDERR) While this implementation will work correctly, it is known to be
+                                                                                   W20191108-23:24:48.947(-10)? (STDERR) approximately three times slower than the native implementation.
+                                                                                   W20191108-23:24:48.947(-10)? (STDERR) In order to use the native implementation instead, run
+                                                                                   W20191108-23:24:48.948(-10)? (STDERR)
+                                                                                   W20191108-23:24:48.950(-10)? (STDERR)   meteor npm install --save bcrypt
+                                                                                   W20191108-23:24:48.950(-10)? (STDERR)
+                                                                                   W20191108-23:24:48.951(-10)? (STDERR) in the root directory of your application.
+                                                                                   I20191108-23:24:49.613(-10)? Creating the default user(s)
+                                                                                   I20191108-23:24:49.614(-10)?   Creating user admin@foo.com.
+                                                                                   I20191108-23:24:49.835(-10)?   Creating user john@foo.com.
+                                                                                   I20191108-23:24:50.037(-10)? Creating default data.
+                                                                                   I20191108-23:24:50.038(-10)?   Adding: Johnson (john@foo.com)
+                                                                                   I20191108-23:24:50.041(-10)?   Adding: Casanova (john@foo.com)
+                                                                                   I20191108-23:24:50.041(-10)?   Adding: Binsted (admin@foo.com)
+                                                                                   => Started your app.
+                                                                                   
+                                                                                   => App running at: http://localhost:3000/
+                                                                                      Type Control-C twice to stop.
 
 </code></pre></div></div>
 
@@ -125,6 +126,3 @@ in the root directory of your application.
 <p>It is possible to designate one or more users as “Admins” through the settings file.  When a user has the Admin role, they get access to a special NavBar link that retrieves a page listing all Contacts associated with all users:</p>
 
 <p><img src="doc/admin-page.png"></p>
-
-
-        </section>
